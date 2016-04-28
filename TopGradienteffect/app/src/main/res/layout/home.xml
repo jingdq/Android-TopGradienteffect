@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/father">
+
+        <ScrollView
+            android:id="@+id/scrollvisacontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backhome">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backhome">
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backhome">
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        //头部实现
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:background="#000"
+            android:id="@+id/visatitle">
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="15dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="头部"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="24dp"
+                    android:textColor="#ffffff"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
